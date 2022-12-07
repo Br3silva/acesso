@@ -1,6 +1,6 @@
 <?php
 
-$valor = $_GET["usuario"];
-echo "$valor";
+$a =10;
+echo $a;
 
 ?>
