@@ -11,6 +11,13 @@ e criando e alternando os arquivos abaixo no settings.json plugin php PHP Intele
 "php.validate.run": "onType",
 
 
+$(window):
+capta eventos da janela viweport do navegador se a janela foi carregada 
+
+$(document):
+relacionado ao elemntos html(codigo)
+
+
 
 
  
