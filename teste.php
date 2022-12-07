@@ -2,8 +2,11 @@
 
 <?php
 
-$a =10;
-echo $a;
+$a =11;
+print_r($a);
+print_r("<br>");
+
+printf($a);
 
 ?>
 
