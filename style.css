@@ -20,8 +20,8 @@ background-color: rgb(82, 126, 126);
 height: 300px;
 width: 300px;
 border-radius: 10px;
-left: 20%;
-top: 40%;
+left: 40%;
+top: 20%;
 }
 input{
 display:block;
@@ -53,4 +53,35 @@ label{
     position: relative;
     left:25%;
   }
+.barra_lateral{
 
+    display:block;
+    position:absolute;
+    background-color: rgb(82, 126, 126);
+    height: 680px;
+    width: 200px;
+    border-radius: 10px;
+    left: 0px;
+    top: 2px;
+    }
+
+.menubarralateral{
+
+display: block;
+position: relative;
+top: 30px;
+left: 6px;
+}
+
+.button_barralateral{
+display: flex;
+background-color: rgb(70, 70, 134);
+height: 50px;
+width: 40px;
+padding: 18px 80px;
+margin: 10px;
+left: 0px;
+border-radius: 30px;
+justify-content: center;
+color: azure;
+}

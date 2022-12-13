@@ -1,3 +1,4 @@
+//acessando id da funçao da tag
 const formulario = document.forms.namedItem("form");
 const cxAlta = document.getElementById("func");
 const cxAlta1 = document.getElementById("func1");
