@@ -63,7 +63,7 @@ if($check == 1){
      alert("USUARIO JÁ EXISTE!!!");
      </script>';
 }
-else{
+else {
     $conexao ->query ("INSERT INTO cadastro1 (usuario, senha) VALUES ('$nome','$senha')");
     echo '<script type="text/JavaScript"> 
     alert("CADASTRO REALIZADO COM SUCESSO!!!");
