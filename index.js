@@ -27,4 +27,12 @@ cxAlta.oninput = function handleInput(e) {
     e.target.selectionEnd = se;
  }
 
-
+ function alerta(type, title, mensagem){
+   Swal.fire({
+     type: type,
+     title: title,
+     text: mensagem,
+     showConfirmButton: false,
+     timer: 1500
+   });
+ }

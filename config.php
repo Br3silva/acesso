@@ -1,7 +1,13 @@
 
 
-<?php    
-$dbhost='localhost';
+<?php  
+
+
+
+$conexao = new mysqli('localhost', 'root', '', 'bd_relatorio');
+
+
+/*$dbhost='localhost';
 $dbUsername='root';
 $dbPassword='';
 $dbName='bd_relatorio';
@@ -16,6 +22,6 @@ else{
 
     echo "conexao bem sucedida";
 }
+*/
 
-
-?>*/
+?>

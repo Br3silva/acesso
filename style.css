@@ -85,3 +85,9 @@ border-radius: 30px;
 justify-content: center;
 color: azure;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(253, 252, 250);
+
+}
