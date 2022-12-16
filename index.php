@@ -5,10 +5,10 @@
 include_once('config.php');
 
 if(isset($_POST['submit'])){
-print_r('<br>');
+/*('<br>');
 print_r('Nome: ' . $_POST['usuario']);
 print_r('<br>');
-print_r('Email: ' . md5($_POST['senha']));
+print_r('Email: ' . md5($_POST['senha']));*/
 
 $nome = $_POST['usuario'];
 $senha = MD5($_POST['senha']);
