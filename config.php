@@ -5,7 +5,6 @@ $dbhost='localhost';
 $dbUsername='root';
 $dbPassword='';
 $dbName='bd_relatorio';
-
 $conexao =new mysqli ($dbhost,$dbUsername,$dbPassword,$dbName);
 
 

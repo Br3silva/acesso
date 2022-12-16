@@ -1,24 +1,5 @@
 
 
-<?php
-//incluir arquivo
-include_once('config.php');
-
-if(isset($_POST['submit'])){
-/*('<br>');
-print_r('Nome: ' . $_POST['usuario']);
-print_r('<br>');
-print_r('Email: ' . md5($_POST['senha']));*/
-
-$nome = $_POST['usuario'];
-$senha = MD5($_POST['senha']);
-
-$result = mysqli_query($conexao, "INSERT INTO `cadastro` ( `Usuario`, `senha`) 
-VALUES ('$nome','$senha')");
-
-  header('Location: index.php');
-
-}
 ?>
 
 
@@ -40,11 +21,11 @@ VALUES ('$nome','$senha')");
             <h2>Acesso</h2>
         <form action="index.php" name="form" method="post">
         <label for="usuario">usuario</label>
-        <!-- funçao handle adiciona condicional a letra maiuscula -->
-        <input id="func" type="text" name="usuario" value="etes" type="button" required oninput="handleInput(event)" required>
+        <!--funçao handle adiciona condicional a letra maiuscula -->
+        <input id="func" type="text" name="usuario" value=" " type="button" required oninput="handleInput(event)" required>
         <label for= "senha">senha</label>
         <!-- id func1 paraidentificar a funçao dentro da tag-->
-        <input  id="func1" type="text" name="senha"  value="123" required  oninput="handleInput(event)" required><br>
+        <input  id="func1" type="text" name="senha"  value=" " required  oninput="handleInput(event)" required><br>
         <button type="submit" name="submit" id="submit">Enviar</button>
     </form>
     </div>
@@ -54,3 +35,27 @@ VALUES ('$nome','$senha')");
     </body>
     </html>
 
+    <?php
+//incluir arquivos
+include_once('config.php');
+
+if(isset($_POST['submit'])){
+/*('<br>');
+print_r('Nome: ' . $_POST['usuario']);
+print_r('<br>');
+print_r('Email: ' . md5($_POST['senha']));*/
+
+$nome = $_POST['usuario'];
+$senha = MD5($_POST['senha']);
+
+
+$result = mysqli_query($conexao, "INSERT INTO cadastro (id,usuario,senha) 
+        VALUES ('','$nome','$senha')");
+
+
+//$result = mysqli_query($conexao, "INSERT INTO `cadastro` ( `Usuario`, `senha`) 
+//VALUES ('$nome','$senha')");
+
+  header('Location: index.php');
+
+}
