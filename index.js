@@ -36,3 +36,7 @@ cxAlta.oninput = function handleInput(e) {
      timer: 1500
    });
  }
+
+ document.getElementById("usuario").innerHTML= breno;
+
+

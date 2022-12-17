@@ -44,7 +44,7 @@ button{
     position: relative;
     left:25%;
     height: 20px;
-    width: 60px;
+    width: 120px;
     border-radius: 5px;
 }
 
@@ -89,5 +89,14 @@ color: azure;
 a {
     text-decoration: none;
     color: rgb(253, 252, 250);
+
+}
+
+.btn_sair{
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 196, 27);
+    border-radius: 30px;
+    top: 240px;
+    left: 30px;
 
 }
